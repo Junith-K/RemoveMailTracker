@@ -1,0 +1,17 @@
+{
+    "name": "Mail Tracker Remover",
+    "version": "0.1.0",
+    "description": "sending emails",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.mail.google.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.mail.google.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Clearbit Auto"
+    },
+    "manifest_version": 3
+  }
